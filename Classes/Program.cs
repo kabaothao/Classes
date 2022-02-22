@@ -26,10 +26,18 @@ namespace Classes // Note: actual namespace depends on the project name.
     {
         static void Main(string[] args)
         {
-            var person = new Person();
-            person.Parse("John");
+            var person = Person.Parse("John");
             //person.Name = "John";
             person.Introduce("Mosh");
         }
     }
 }
+/*
+ This is a use case for using a static member is static member. And it is only accessible from the class not an object.
+
+
+Creating Objects
+
+Person person = new Person();
+var person = new Person(0;
+ */
